@@ -28,7 +28,15 @@ $ make install INSTALL_DIR=/path/to/your_directory CONFIG_DIR=/path/to/your_dire
 $ cd ../   
 $ ./MQTT-SNGateway [-f Config file name]
 ````   
-
+If you get the error message as follows:
+````    
+what(): RingBuffer can't create a shared memory.
+Aborted (core dumped)
+````
+You have to start using sudo command only once for the first time.    
+````
+$ sudo ./MQTT-SNGateway [-f Config file name]
+````
 
 ### **How to Change the configuration of the gateway**    
 **../gateway.conf**   Contents are follows: 
