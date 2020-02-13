@@ -173,7 +173,7 @@ void writeInt(unsigned char** pptr, int anInt)
  * @param pptr pointer to the output buffer - incremented by the number of bytes used & returned
  * @param string the C string to write
  */
-void writeCString(unsigned char** pptr, char* string)
+void writeCString(unsigned char** pptr, const char* string)
 {
 	int len = strlen(string);
 	memcpy(*pptr, string, len);
